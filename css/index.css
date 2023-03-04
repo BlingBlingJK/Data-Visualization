@@ -1,0 +1,152 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Microsoft Yahei";
+  background-image: url(../images/bg1.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center center;
+  overflow: hidden;
+}
+h1 {
+  text-align: center;
+  margin: 0;
+  line-height: 90px;
+  font-size: 30px;
+  color: #fff;
+  font-weight: normal;
+}
+
+.chart-box {
+  height: 95%;
+  overflow: hidden;
+  position: relative;
+  top: 5%;
+}
+content {
+  width: 100%;
+  height: 100%;
+  display: grid; /*网格布局*/
+  /* 设置列数, 每一个格子的像素*/
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 80px 1fr 1fr 1fr;
+  /*间距*/
+  gap: 10px;
+}
+/* .box4{
+    /* 跨行 */
+/* grid-row:span 2;
+} */
+.box1 {
+  /* 跨列 */
+  grid-column: span 4;
+}
+.box3 {
+  /* 跨列 */
+  grid-column: span 2;
+}
+.box6 {
+  /* 跨列 */
+  grid-column: span 2;
+}
+.box8 {
+  /* 跨列 */
+  grid-column: span 3;
+}
+
+/*------------------边框---------------------*/
+.box2,
+.box3,
+.box4,
+.box5,
+.box6,
+.box7,
+.box8,
+.box9 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+}
+.svg-box {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.border {
+  position: absolute;
+  display: block;
+}
+.right-top {
+  right: 0;
+  transform: rotateY(180deg);
+}
+.left-bottom {
+  bottom: 0;
+  transform: rotateX(180deg);
+}
+.right-bottom {
+  right: 0;
+  bottom: 0;
+  transform: rotateX(180deg) rotateY(180deg);
+}
+/*------------------第1行第2列 开始---------------------*/
+#chart2 {
+  top: 50%;
+  transform: translateY(-40%);
+}
+#row1_2_1,
+#row1_2_2,
+#row1_2_3 {
+  width: 33.33%;
+  height: 100%;
+  /* background-color: rgb(255, 57, 209); */
+  float: left;
+}
+/*------------------ 第1行第2列 结束 ---------------------*/
+
+/*------------------ 第2行 开始 ---------------------*/
+/* 第1列 和 第3列  */
+#chart4,
+#chart5,
+#chart6 {
+  padding: 0 5%;
+}
+
+/* 第2列 */
+#chart5 {
+  margin-top: -2%;
+  font-weight: normal;
+}
+#chart5 h2 {
+  text-align: center;
+  color: white;
+  font-size: 20px;
+}
+#chart5 .mytable {
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+}
+
+#chart5 .mytable th {
+  line-height: 180%;
+  color: #d9aa87;
+  background-color: #334075;
+}
+
+#chart5 .mytable td {
+  text-align: center;
+  line-height: 180%;
+  font-size: 16px;
+  color: white;
+}
+/*------------------ 第2行 结束 ---------------------*/
